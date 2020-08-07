@@ -1,16 +1,5 @@
 function isUppercase(letter) {
-  if (!letter) {
-    return true;
-  }
-
-  const REGEX = /[a-z]|[A-Z]/g
-  const TEST_DOWNCASE = /[a-z]/g;
-  let strippedWord = letter.match(REGEX).join('');
-  if ((TEST_DOWNCASE).test(strippedWord)) {
-    return false;
-  }
-
-  return true;
+  return letter.toUpperCase() === letter;
 }
 
 isUppercase('t');               // false
