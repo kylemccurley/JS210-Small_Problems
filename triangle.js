@@ -95,3 +95,10 @@ console.log(triangle(30, 90, 60) === "right");
 console.log(triangle(120, 50, 10) === "obtuse");
 console.log(triangle(0, 90, 90) === "invalid");
 console.log(triangle(50, 50, 50) === "invalid");
+
+/*
+Refactoring Suggestions:
+  - Converting the sides in the arguments to an array, rather than keeping them in the args object.
+    - I had to jump through a couple hoops in order to check if the triangle was valid because the args object is not actually the Array object
+    which contains a lot of helpful array arguments.
+*/
