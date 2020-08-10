@@ -1,10 +1,10 @@
 function isPrime(num) {
-  if (num === 1 || num === 0) {
+  if ((num <= 1) || ((num > 2) && (num % 2 === 0))) {
     return false;
   }
 
   // Only divisible by 1 and itself
-  for (let i = 2; i < num; i++) {
+  for (let i = 3; i < num; i+= 2) {
     if (num % i === 0) {
       return false;
     }
