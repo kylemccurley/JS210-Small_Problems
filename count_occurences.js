@@ -9,7 +9,9 @@ function countOccurrences(vehicles) {
     }
   }
 
-  return occurencesCount;
+  for (vehicle in occurencesCount) {
+    console.log(vehicle + ' => ' + occurencesCount[vehicle]);
+  }
 }
 
 const vehicles = ['car', 'car', 'truck', 'car', 'SUV', 'truck',
